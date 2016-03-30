@@ -1,0 +1,70 @@
+cd d:/gitnutenglish
+git checkout tangfei
+git add NutEnglish --all
+git commit -m ""
+
+
+
+
+
+
+
+
+
+git push -u origin master 
+(-u第一次使用)本地库的所有内容推送到远程库上
+
+git init  
+命令把这个目录变成Git可以管理的仓库
+
+git add  file
+告诉Git，把文件添加到仓库
+
+git commit
+告诉Git，把文件提交到仓库
+
+-m"fffff"
+ 注释
+
+git status
+命令看看结果：
+
+git diff readme.txt 
+看看具体修改了什么内容
+
+git log --pretty=oneline
+历史记录
+
+git reset --hard HEAD^  或者git reset --hard 3628164
+回退到上一个版本
+
+git reflog
+Git提供了一个命令git reflog用来记录你的每一次命令
+
+cat file
+查看文件
+
+ git checkout -- readme.txt
+Git会告诉你，git checkout -- file可以丢弃工作区的修改
+
+git remote add origin git@server-name:path/repo-name.git
+要关联一个远程库
+
+git push -u origin master
+推送master分支的所有内容
+
+查看分支：git branch
+
+创建分支：git branch <name>
+
+切换分支：git checkout <name>
+git reset --hard 3628164
+回退到指定ID号
+git reflog
+打印所有提交的id 
+
+df370b6
+3f5c
+创建+切换分支：git checkout -b <name>
+
+合并某分支到当前分支：git merge <name>
